@@ -1,6 +1,6 @@
 import React from 'react';
 import CreativeCard from './CreativeCard';
-import { creativeData } from '../data';
+import { creativeData } from '../../data';
 
 function Creative() {
   console.log(creativeData[0]);
@@ -21,7 +21,7 @@ function Creative() {
       </div>
       <div>
         <div className='md:flex md:justify-center items-center  flex-row md:gap-[48px] px-[24px] md:px-[64px] mb-[36px]'>
-          <div className='flex justify-center '>
+          <div className='flex justify-center mb-[36px] md:mb-[0px]'>
             <CreativeCard
               key={creativeData[0].id}
               img={creativeData[0].img}
@@ -40,7 +40,7 @@ function Creative() {
         </div>
 
         <div className='md:flex md:justify-center items-center  flex-row md:gap-[48px] px-[24px] md:px-[64px] mb-[36px]='>
-          <div className='flex justify-center '>
+          <div className='flex justify-center mb-[36px] md:mb-[0px]'>
             <CreativeCard
               key={creativeData[2].id}
               img={creativeData[2].img}
