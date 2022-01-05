@@ -14,7 +14,7 @@ function Hero() {
         </p>
       </div>
       <div className='flex justify-start sm:flex sm:justify-center sm:items-center sm:text-center'>
-        <p className=' text-left px-[24px] pt-[36px]  font-normal max-w-[880px] text-[20px] text-black opacity-[64%]'>
+        <p className=' text-left px-[24px] pt-[24px] sm:pt-[36px]  font-normal max-w-[880px] text-[20px] text-black opacity-[64%]'>
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
