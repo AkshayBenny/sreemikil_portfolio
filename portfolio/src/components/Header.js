@@ -1,4 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
+import { useState } from 'react';
 import { Fragment } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
@@ -16,8 +17,8 @@ const socialMedia = [
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
-        width='36'
-        height='36'
+        width='24'
+        height='24'
       >
         <path fill='none' d='M0 0h24v24H0z' />
         <path
@@ -32,8 +33,8 @@ const socialMedia = [
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
-        width='36'
-        height='36'
+        width='24'
+        height='24'
       >
         <path fill='none' d='M0 0h24v24H0z' />
         <path
@@ -48,8 +49,8 @@ const socialMedia = [
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
-        width='36'
-        height='36'
+        width='24'
+        height='24'
       >
         <path fill='none' d='M0 0h24v24H0z' />
         <path
@@ -64,8 +65,8 @@ const socialMedia = [
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
-        width='36'
-        height='36'
+        width='24'
+        height='24'
       >
         <path fill='none' d='M0 0h24v24H0z' />
         <path
@@ -82,6 +83,27 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  const [isOpen, setIsOpen] = useState(false);
+  console.log(isOpen);
+
+  const componentDidMount = () => {
+    document.body.style.overflow = 'hidden';
+  };
+
+  const componentWillUnmount = () => {
+    document.body.style.overflow = 'visible';
+  };
+
+  const scrollAlower = () => {
+    if (isOpen === true) {
+      componentDidMount();
+    } else if (isOpen === false) {
+      componentWillUnmount();
+    }
+  };
+
+  scrollAlower();
+
   return (
     <>
       <div className='min-h-full  sticky top-0 z-50'>
@@ -91,41 +113,45 @@ export default function Example() {
         >
           {({ open }) => (
             <>
-              <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+              <div className='mx-auto px-[24px] sm:px-[64px]'>
                 <div className='flex items-center justify-between h-16'>
-                  <div className='flex items-center'>
-                    <div className='flex-shrink-0'>
-                      <p className='text-[#120055] text-[16px]  font-semibold	'>
-                        SreemikiLt
-                      </p>
-                    </div>
-                    <div className='hidden md:block'>
-                      <div className='ml-10 flex items-baseline space-x-4'>
-                        {navigation.map((item) => (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            className='font-semibold text-[#120055] text-[16px]'
-                            aria-current={item.current ? 'page' : undefined}
-                          >
-                            {item.name}
-                          </a>
-                        ))}
-                      </div>
+                  <div className='flex-shrink-0'>
+                    <p className='text-[#1d0575] text-[16px]  font-semibold	'>
+                      SreemikiLt
+                    </p>
+                  </div>
+                  <div className='hidden md:block'>
+                    <div className='ml-10 flex items-baseline space-x-4'>
+                      {navigation.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className='font-semibold text-[#120055] text-[16px]'
+                          aria-current={item.current ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </a>
+                      ))}
                     </div>
                   </div>
                   <div className='hidden md:block'>
                     <div className='ml-4 flex items-center md:ml-6'>
                       {socialMedia.map((item) => {
-                        return <div>{item.logo}</div>;
+                        return <div className='pr-[24px]'>{item.logo}</div>;
                       })}
 
                       {/* Profile dropdown */}
                     </div>
                   </div>
+
                   <div className='-mr-2 flex md:hidden'>
                     {/* Mobile menu button */}
-                    <Disclosure.Button className=' inline-flex items-center justify-center p-2 rounded-md text-[#120055] '>
+                    <Disclosure.Button
+                      onClick={() => {
+                        setIsOpen(!isOpen);
+                      }}
+                      className=' inline-flex items-center justify-center p-2 rounded-md text-[#120055] '
+                    >
                       <span className='sr-only'>Open main menu</span>
                       {open ? (
                         <XIcon className='block h-6 w-6' aria-hidden='true' />
