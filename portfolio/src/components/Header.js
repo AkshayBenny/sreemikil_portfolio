@@ -125,7 +125,7 @@ export default function Example() {
                   </div>
                   <div className='-mr-2 flex md:hidden'>
                     {/* Mobile menu button */}
-                    <Disclosure.Button className=' inline-flex items-center justify-center p-2 rounded-md text-[#120055]'>
+                    <Disclosure.Button className=' inline-flex items-center justify-center p-2 rounded-md text-[#120055] '>
                       <span className='sr-only'>Open main menu</span>
                       {open ? (
                         <XIcon className='block h-6 w-6' aria-hidden='true' />
