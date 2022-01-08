@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
+
 /* This example requires Tailwind CSS v2.0+ */
 import { useState } from 'react';
-import { Fragment } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
@@ -115,11 +116,13 @@ export default function Example() {
             <>
               <div className='mx-auto px-[24px] sm:px-[64px]'>
                 <div className='flex items-center justify-between h-16'>
-                  <div className='flex-shrink-0'>
-                    <p className='text-[#1d0575] text-[16px]  font-semibold	'>
-                      SreemikiLt
-                    </p>
-                  </div>
+                  <Link to="/">
+                    <div className='flex-shrink-0'>
+                      <p className='text-[#1d0575] text-[16px]  font-semibold	'>
+                        SreemikiLt
+                      </p>
+                    </div>
+                  </Link>
                   <div className='hidden md:block'>
                     <div className='ml-10 flex items-baseline space-x-4'>
                       {navigation.map((item) => (

@@ -1,6 +1,6 @@
 import React from 'react';
 import OtherCards from './OtherCards';
-import { otherData } from '../../data';
+import { otherData } from '../../../data';
 
 function Other() {
   return (

@@ -1,20 +1,27 @@
 import React from 'react';
-import Hero from './components/Hero';
-import Creative from './components/creative/Creative';
-import Other from './components/Other/Other';
-import About from './components/About';
+import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
+
+import HomePage from './screens/HomePage';
+import CreativePage from './screens/CreativePage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
-      <Header />
-      <Hero />
-      <Creative />
-      <Other />
-      <About />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path='/' component={HomePage}>
+            <HomePage />
+          </Route>
+
+          <Route exact path='/creative/:id' component={CreativePage}>
+            <CreativePage />
+          </Route>
+        </Switch>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
