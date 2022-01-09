@@ -90,6 +90,7 @@ function Footer() {
         <div className='flex justify-center gap-[36px] md:gap-[48px] pt-[36px]'>
           <div className='bg-white w-[60px] h-[60px] rounded-[8px] p-[12px]'>
             <svg
+              className='opacity-100'
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 24 24'
               width='36'
