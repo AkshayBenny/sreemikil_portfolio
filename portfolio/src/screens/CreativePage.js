@@ -7,8 +7,177 @@ function CreativePage() {
   const project = creativeProjectData.find((project) => project.id === id);
   console.log(project);
   return (
-    <div>
-      <h1>hello</h1>
+    <div className='px-[24px] md:px-[64px] mt-[36px]'>
+      <div className='lg:flex justify-center items-center gap-[48px]'>
+        <div className='lg:pl-[24px] max-w-[552px]'>
+          <h1 className='text-[16px] font-semibold text-[#453091] '>
+            Freelance Project
+          </h1>
+          <h1 className='font-semibold pt-[16px] text-[56px] text-[#120055]'>
+            Airline Booking
+          </h1>
+          <p className='text-[20px] pt-[16px] font-normal	opacity-[64%]'>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+        <div>
+          <img
+            className='rounded-[8px] mt-[36px] lg:mt-[0px] h-[320px] md:h-[486px] object-cover'
+            src='https://images.unsplash.com/photo-1641761612081-784c180cae2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+            alt='creative project pic'
+          />
+        </div>
+      </div>
+      {/* '2nd section' */}
+      <div className='mt-[120px] lg:mt-[96px] lg:flex gap-[143px]'>
+        <div className='invisible lg:visible'>
+          <h1 className='font-medium	text-[24px] text-[#453091]'>CONTENTS</h1>
+          <div className='font-semibold text-[16px] pt-[24px] text-[#120055]'>
+            <p className='pb-[20px]'>Introduction</p>
+            <p className='pb-[20px]'>Objective</p>
+            <p className='pb-[20px]'>Style Guide</p>
+            <p className='pb-[20px]'>User Flow</p>
+            <p className='pb-[20px]'>Wireframing</p>
+            <p className='pb-[20px]'>Final UI</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h1 className='font-medium	text-[18px] lg:text-[24px] text-[#453091]'>
+              PROJECT
+            </h1>
+          </div>
+          <div>
+            <h1 className='font-bold	lg:font-semibold pt-[16px] text-[28px] lg:text-[56px] text-[#120055]'>
+              CTracker - Track your foot and confirm your footprints.
+            </h1>
+            <p className='text-[16px] lg:text-[20px] pt-[16px] font-normal	opacity-[64%]'>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit. Amet
+              minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit. Exercitation
+              veniam consequat sunt nostrud amet.
+            </p>
+            <div className='flex-row lg:flex lg:justify-between lg:gap-[224px] pt-[72px]'>
+              <div>
+                <h1 className='font-medium text-[18px] lg:text-[24px] pb-[16px]'>
+                  Skills
+                </h1>
+                <p className='font-normal	text-[20px] opacity-[60%]'>
+                  UI Design
+                </p>
+                <p className='font-normal	text-[20px] opacity-[60%] pb-[24px] lg:pb-[0px]'>
+                  User Research
+                </p>
+              </div>
+              <div>
+                <h1 className='font-medium text-[18px] lg:text-[24px] pb-[16px]'>
+                  Team
+                </h1>
+                <p className='font-normal	text-[20px] opacity-[60%]'>Myself</p>
+                <p className='font-normal	text-[20px] opacity-[60%]'>Akhil TJ</p>
+                <p className='font-normal	text-[20px] opacity-[60%] pb-[24px] lg:pb-[0px]'>
+                  Sagav Sugu KM
+                </p>
+              </div>
+              <div>
+                <h1 className='font-medium text-[18px] lg:text-[24px] pb-[16px] '>
+                  My Role
+                </h1>
+                <p className='font-normal	text-[20px] opacity-[60%] pb-[24px] lg:pb-[0px]'>
+                  UI/UX Designer
+                </p>
+              </div>
+            </div>
+            <div>
+              <h1 className='font-semibold text-[#120055] pt-[72px]	text-[24px] lg:text-[40px]'>
+                Introduction
+              </h1>
+              <p className='text-[16px] lg:text-[20px] pt-[16px] font-normal	opacity-[64%]'>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <div>
+              <h1 className='font-semibold text-[#120055] pt-[72px]	text-[24px] lg:text-[40px]'>
+                Objectives
+              </h1>
+              <p className='text-[16px] lg:text-[20px] pt-[16px] font-normal	opacity-[64%]'>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <div>
+              <h1 className='font-semibold text-[#120055] pt-[72px]	text-[24px] lg:text-[40px]'>
+                Style Guide
+              </h1>
+              <p className='font-semibold text-[#453091] text-[20px] lg:text-[32px] pt-[36px]'>
+                Typography
+              </p>
+              {/* <img
+                className='w-full'
+                src='https://articulate-heroes.s3.amazonaws.com/dev-type-styles-begini2kr8s.png'
+                alt='typography'
+              /> */}
+              <p className='font-semibold text-[#000000] opacity-[60%] text-[51.49px] pb-[22px]'>
+                Heading 1
+              </p>
+              <p className='font-semibold text-[#000000] opacity-[60%] text-[36.78px] pb-[21px]'>
+                Heading 2
+              </p>
+              <p className='font-semibold text-[#000000] opacity-[60%] text-[29.43px] pb-[21px]'>
+                Subheading
+              </p>
+              <p className='font-medium	 text-[#000000] opacity-[60%] text-[22.07px] pb-[19px]'>
+                Body Regular
+              </p>
+              <p className='font-normal	 text-[#000000] opacity-[60%] text-[18.39px] pb-[29px]'>
+                Body Small
+              </p>
+              <p className='font-normal	 text-[#000000] opacity-[60%] text-[14.71px] pb-[22px]'>
+                Extra Small
+              </p>
+              <p className='font-normal	 text-[#000000] opacity-[60%] text-[12.87px] pb-[24px]'>
+                Caption
+              </p>
+              <p className='font-semibold		 text-[#000000] opacity-[60%] text-[14.71px]'>
+                Button
+              </p>
+            </div>
+            <div>
+              <h1 className='pt-[16px] font-semibold text-[#453091] text-[20px] lg:text-[32px]'>
+                Colors
+              </h1>
+              <div className='flex gap-[8px] lg:gap-[11px] pt-[21px] lg:pt-[24px]'>
+                <div className='w-[65px] h-[65px] lg:w-[82px] lg:h-[82px] rounded-[200px] bg-[#120055]'></div>
+                <div className='w-[65px] h-[65px] lg:w-[82px] lg:h-[82px] rounded-[200px] bg-[#453091]'></div>
+                <div className='w-[65px] h-[65px] lg:w-[82px] lg:h-[82px] rounded-[200px] bg-[#613EE2]'></div>
+                <div className='w-[65px] h-[65px] lg:w-[82px] lg:h-[82px] rounded-[200px] bg-[#9A81F4]'></div>
+                <div className='w-[65px] h-[65px] lg:w-[82px] lg:h-[82px] rounded-[200px] bg-[#DCD3FC]'></div>
+              </div>
+            </div>
+            <div>
+              <h1 className='font-semibold text-[#120055] pt-[72px]	text-[24px] lg:text-[40px]'>
+                Userflow
+              </h1>
+            </div>
+            <div>
+              <h1 className='font-semibold text-[#120055] pt-[72px]	text-[24px] lg:text-[40px]'>
+                Wireframing
+              </h1>
+            </div>
+            <div>
+              <h1 className='font-semibold text-[#120055] pt-[72px]	text-[24px] lg:text-[40px]'>
+                Final UI
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
