@@ -4,12 +4,10 @@ import { creativeProjectData } from '../data';
 
 function CreativePage() {
   const { id } = useParams();
-  const param = useParams();
-  console.log('hello');
-
+  const project = creativeProjectData.find((project) => project.id === id);
+  console.log(project);
   return (
     <div>
-      {creativeProjectData.find((item) => item.id === id)}
       <h1>hello</h1>
     </div>
   );

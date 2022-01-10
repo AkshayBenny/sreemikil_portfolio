@@ -4,7 +4,6 @@ import CreativeCard from './CreativeCard';
 import { creativeData } from '../../../data';
 
 function Creative() {
-  console.log(creativeData[0]);
   return (
     <div className='flex-row items-center mt-[264px]'>
       <div className='flex justify-center pb-[16px]'>

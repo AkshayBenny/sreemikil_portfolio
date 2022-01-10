@@ -4,17 +4,18 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+
 import { navigation, socialMedia } from '../data';
-
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 export default function Example() {
+  // const [isActive, setIsActive] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
+
+  // console.log(isActive);
 
   const componentDidMount = () => {
     document.body.style.overflow = 'hidden';
@@ -33,6 +34,7 @@ export default function Example() {
   };
 
   scrollAlower();
+  // setIsActive(false);
 
   return (
     <>
@@ -55,21 +57,33 @@ export default function Example() {
                   <div className='hidden md:block'>
                     <div className='ml-10 flex items-baseline space-x-4'>
                       {navigation.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className='font-semibold text-[#120055] text-[16px]'
-                          aria-current={item.current ? 'page' : undefined}
-                        >
-                          {item.name}
-                        </a>
+                        <div>
+                          <a
+                            key={item.name}
+                            href={item.href}
+                            className='font-semibold text-[#12005580] text-[16px] hover:text-[#120055] transition ease-in-out delay-100 active:text-[#120055]'
+                            aria-current={item.current ? 'page' : undefined}
+                          >
+                            {item.name}
+                          </a>
+                        </div>
                       ))}
                     </div>
                   </div>
                   <div className='hidden md:block'>
                     <div className='ml-4 flex items-center md:ml-6'>
                       {socialMedia.map((item) => {
-                        return <div className='pr-[24px]'>{item.logo}</div>;
+                        return (
+                          <div className='pr-[24px]'>
+                            <a
+                              href={item.link}
+                              target='_blank'
+                              rel='noreferrer'
+                            >
+                              {item.logo}
+                            </a>
+                          </div>
+                        );
                       })}
 
                       {/* Profile dropdown */}

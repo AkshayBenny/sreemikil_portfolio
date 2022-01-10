@@ -73,32 +73,37 @@ export const creativeProjectData = [
   {
     id: '1',
     title: 'creative project 1',
+    data: [],
   },
   {
     id: '2',
     title: 'creative project 1',
+    data: [],
   },
   {
     id: '3',
     title: 'creative project 1',
+    data: [],
   },
   {
     id: '4',
     title: 'creative project 1',
+    data: [],
   },
 ];
 
 export const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Portfolio', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Contact', href: '#' },
+  { id: '1', name: 'Home', href: '#' },
+  { id: '2', name: 'Portfolio', href: '#' },
+  { id: '3', name: 'About', href: '#' },
+  { id: '4', name: 'Contact', href: '#' },
 ];
 
 export const socialMedia = [
   {
     logo: (
       <svg
+        className='hover:-translate-y-1 transition ease-in-out delay-100'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
         width='24'
@@ -116,6 +121,7 @@ export const socialMedia = [
   {
     logo: (
       <svg
+        className='hover:-translate-y-1 transition ease-in-out delay-100'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
         width='24'
@@ -128,11 +134,12 @@ export const socialMedia = [
         />
       </svg>
     ),
-    link: '/',
+    link: 'https://www.instagram.com/sreemikil_t/',
   },
   {
     logo: (
       <svg
+        className='hover:-translate-y-1 transition ease-in-out delay-100'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
         width='24'
@@ -145,11 +152,12 @@ export const socialMedia = [
         />
       </svg>
     ),
-    link: '/',
+    link: 'https://www.behance.net/sreemikilt',
   },
   {
     logo: (
       <svg
+        className='hover:-translate-y-1 transition ease-in-out delay-100'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
         width='24'
@@ -162,6 +170,6 @@ export const socialMedia = [
         />
       </svg>
     ),
-    link: '/',
+    link: 'https://www.linkedin.com/in/sreemikil-t-manoharan-4a050a188/',
   },
 ];
