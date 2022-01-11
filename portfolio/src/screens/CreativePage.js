@@ -1,6 +1,7 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import { creativeProjectData } from '../data';
+import { useParams, Link } from 'react-router-dom';
+import { creativeProjectData, creativeData } from '../data';
+import CreativeCard from '../components/homepage/creative/CreativeCard';
 
 function CreativePage() {
   const { id } = useParams();
@@ -24,7 +25,7 @@ function CreativePage() {
         <div>
           <img
             className='rounded-[8px] mt-[36px] lg:mt-[0px] h-[320px] md:h-[486px] object-cover'
-            src='https://images.unsplash.com/photo-1641761612081-784c180cae2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+            src='https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80'
             alt='creative project pic'
           />
         </div>
@@ -166,6 +167,7 @@ function CreativePage() {
               </h1>
               <div>
                 <img
+                  className='w-full'
                   src='https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2019Q4/user-flow-diagram/user-journey-flow.png'
                   alt='userflow'
                 />
@@ -177,6 +179,7 @@ function CreativePage() {
               </h1>
               <div>
                 <img
+                  className='w-full'
                   src='https://www.uxmatters.com/mt/archives/2020/10/images/Mobile-app-wireframes_Fig1.png'
                   alt='wireframe'
                 />
@@ -188,11 +191,39 @@ function CreativePage() {
               </h1>
               <div>
                 <img
+                  className='w-full'
                   src='https://www.mobileappdaily.com/public/uploads/mad_96290885f9.png'
                   alt='ui'
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className='mt-[120px]'>
+        <h1 className='font-semibold text-[#120055] pt-[72px]	pb-[16px] text-[24px] lg:text-[40px] text-center'>
+          Other Works
+        </h1>
+        <div className='lg:flex lg:justify-center items-center  flex-row lg:gap-[48px] px-[24px] lg:px-[64px] mt-[48px] lg:mt-[72px]'>
+          <div className='flex justify-center mb-[36px] lg:mb-[0px]'>
+            <Link to={`${creativeData[0].id}`}>
+              <CreativeCard
+                key={creativeData[0].id}
+                img={creativeData[0].img}
+                title={creativeData[0].title}
+                subTitle={creativeData[0].subTitle}
+              />
+            </Link>
+          </div>
+          <div className='flex justify-center '>
+            <Link to={`${creativeData[1].id}`}>
+              <CreativeCard
+                key={creativeData[1].id}
+                img={creativeData[1].img}
+                title={creativeData[1].title}
+                subTitle={creativeData[1].subTitle}
+              />
+            </Link>
           </div>
         </div>
       </div>

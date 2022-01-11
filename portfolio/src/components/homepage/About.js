@@ -38,6 +38,19 @@ function About() {
             <h1 className='text-[18px] md:text-[24px] text-[#120055] font-medium'>
               Familiar Tools
             </h1>
+            <div className='flex gap-[18.5px] lg:gap-[24px] pt-[18.5px] lg:pt-[24px]'>
+              {aboutData[0].tools.map((tool) => {
+                return (
+                  <>
+                    <img
+                      className='w-[33px] lg:w-[43px] h-[33px] lg:h-[43px] rounded'
+                      src={tool.logo}
+                      alt='tool'
+                    />
+                  </>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
