@@ -31,7 +31,7 @@ function CreativePage() {
       </div>
       {/* '2nd section' */}
       <div className='mt-[120px] lg:mt-[96px] lg:flex gap-[143px]'>
-        <div className='invisible lg:visible'>
+        <div className='hidden lg:block'>
           <h1 className='font-medium	text-[24px] text-[#453091]'>CONTENTS</h1>
           <div className='font-semibold text-[16px] pt-[24px] text-[#120055]'>
             <p className='pb-[20px]'>Introduction</p>
@@ -62,7 +62,7 @@ function CreativePage() {
             </p>
             <div className='flex-row lg:flex lg:justify-between lg:gap-[224px] pt-[72px]'>
               <div>
-                <h1 className='font-medium text-[18px] lg:text-[24px] pb-[16px]'>
+                <h1 className='font-medium text-[18px] lg:text-[24px] pb-[16px] text-[#120055]'>
                   Skills
                 </h1>
                 <p className='font-normal	text-[20px] opacity-[60%]'>
@@ -73,7 +73,7 @@ function CreativePage() {
                 </p>
               </div>
               <div>
-                <h1 className='font-medium text-[18px] lg:text-[24px] pb-[16px]'>
+                <h1 className='font-medium text-[18px] lg:text-[24px] pb-[16px] text-[#120055]'>
                   Team
                 </h1>
                 <p className='font-normal	text-[20px] opacity-[60%]'>Myself</p>
@@ -82,8 +82,8 @@ function CreativePage() {
                   Sagav Sugu KM
                 </p>
               </div>
-              <div>
-                <h1 className='font-medium text-[18px] lg:text-[24px] pb-[16px] '>
+              <div className='pr-[0px] lg:pr-[20px]'>
+                <h1 className='font-medium text-[18px] lg:text-[24px] pb-[16px] text-[#120055]'>
                   My Role
                 </h1>
                 <p className='font-normal	text-[20px] opacity-[60%] pb-[24px] lg:pb-[0px]'>
@@ -115,7 +115,7 @@ function CreativePage() {
               <h1 className='font-semibold text-[#120055] pt-[72px]	text-[24px] lg:text-[40px]'>
                 Style Guide
               </h1>
-              <p className='font-semibold text-[#453091] text-[20px] lg:text-[32px] pt-[36px]'>
+              <p className='font-semibold text-[#453091] text-[20px] lg:text-[32px] pt-[36px] pb-[24px]'>
                 Typography
               </p>
               {/* <img
@@ -161,19 +161,37 @@ function CreativePage() {
               </div>
             </div>
             <div>
-              <h1 className='font-semibold text-[#120055] pt-[72px]	text-[24px] lg:text-[40px]'>
+              <h1 className='font-semibold text-[#120055] pt-[72px]	pb-[16px] text-[24px] lg:text-[40px]'>
                 Userflow
               </h1>
+              <div>
+                <img
+                  src='https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2019Q4/user-flow-diagram/user-journey-flow.png'
+                  alt='userflow'
+                />
+              </div>
             </div>
             <div>
-              <h1 className='font-semibold text-[#120055] pt-[72px]	text-[24px] lg:text-[40px]'>
+              <h1 className='font-semibold text-[#120055] pt-[72px] pb-[16px]	text-[24px] lg:text-[40px]'>
                 Wireframing
               </h1>
+              <div>
+                <img
+                  src='https://www.uxmatters.com/mt/archives/2020/10/images/Mobile-app-wireframes_Fig1.png'
+                  alt='wireframe'
+                />
+              </div>
             </div>
             <div>
-              <h1 className='font-semibold text-[#120055] pt-[72px]	text-[24px] lg:text-[40px]'>
+              <h1 className='font-semibold text-[#120055] pt-[72px]	pb-[16px] text-[24px] lg:text-[40px]'>
                 Final UI
               </h1>
+              <div>
+                <img
+                  src='https://www.mobileappdaily.com/public/uploads/mad_96290885f9.png'
+                  alt='ui'
+                />
+              </div>
             </div>
           </div>
         </div>
