@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
 function OtherCards({ img, title }) {
-  const [mouseHover, setMouseHover] = useState(false);
   return (
     <div
-      className='relative group  cursor-pointer transition-all duration-500 ease-in-out'
+      className='relative group cursor-pointer transition-all duration-500 ease-in-out'
       // onMouseEnter={() => setMouseHover(true)}
       // onMouseLeave={() => setMouseHover(false)}
     >
@@ -13,9 +12,9 @@ function OtherCards({ img, title }) {
         alt='other'
         className='rounded-[8px] h-[240px] w-[368px] object-cover'
       />
-      <div className='flex items-center gap-[10px] z-100  absolute bottom-[16px] left-[16px] button'>
+      <div className='flex text-center justify-center items-center gap-[0px] z-100  absolute bottom-[16px] left-[16px] button'>
         <h3 className=' text-white font-semibold text-[32px]'>{title}</h3>
-        <div className='invisible group-hover:visible  ease-in-out delay-100ms duration-500 relative right-[10px] group-hover:right-[0px] transition-all'>
+        <div className='opacity-0 group-hover:translate-x-2 ease-in-out delay-100 transition group-hover:opacity-100'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 24 24'

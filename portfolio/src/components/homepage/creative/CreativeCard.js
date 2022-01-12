@@ -2,7 +2,7 @@ import React from 'react';
 
 function CreativeCard({ img, title, subTitle }) {
   return (
-    <div className='cursor-pointer	 shadow-[0px 0px 20px rgba(201, 199, 199, 0.19)] p-[20px] md:p-[28px] border-2 rounded-[16px]  md:max-w-[552px] max-w-[363px] hover:shadow-lg '>
+    <div className='cursor-pointer transition-all	 shadow-[0px 0px 20px rgba(201, 199, 199, 0.19)] p-[20px] md:p-[28px] border-2 rounded-[16px]  md:max-w-[552px] max-w-[363px] hover:shadow-lg '>
       <div className='object-cover'>
         <img
           className='rounded-[16px] mb-[16px] h-[195px] md:h-[314px] w-[323px] md:w-[496px]'

@@ -103,7 +103,7 @@ export const socialMedia = [
   {
     logo: (
       <svg
-        className='hover:-translate-y-1 transition ease-in-out delay-100'
+        className='hover: transition ease-in-out delay-100'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
         width='24'

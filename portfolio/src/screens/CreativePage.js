@@ -80,7 +80,7 @@ function CreativePage() {
                 <p className='font-normal	text-[20px] opacity-[60%]'>Myself</p>
                 <p className='font-normal	text-[20px] opacity-[60%]'>Akhil TJ</p>
                 <p className='font-normal	text-[20px] opacity-[60%] pb-[24px] lg:pb-[0px]'>
-                  Sagav Sugu KM
+                  Sagav "Lineman" Sugu
                 </p>
               </div>
               <div className='pr-[0px] lg:pr-[20px]'>
