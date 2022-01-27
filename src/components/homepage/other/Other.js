@@ -1,26 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import OtherCards from './OtherCards';
 import { otherData } from '../../../data';
 
 function Other() {
   return (
-    <div className='px-[24px] md:px-[64px] pt-[120px]'>
+    <div className='px-[24px] pt-[120px] md:px-[64px]'>
       <div className='flex justify-center '>
         <h1
-          className='font-semibold text-[#120055
-] text-[32px] md:text-[40px] pb-[48px] md:pb-[72px]'
+          className='text-[#120055 ]
+pb-[48px] text-[32px] font-semibold md:pb-[72px] md:text-[40px]'
         >
           What Else I Do ?
         </h1>
       </div>
-      <div className='md:flex flex-row justify-center gap-[24px]'>
-        <div className='my-[16px] flex justify-center'>
-          <OtherCards
-            img={otherData[0].img}
-            title={otherData[0].title}
-            key={otherData[0].id}
-          />
-        </div>
+      <div className='flex-row justify-center gap-[24px] md:flex'>
+        <Link to='/illustrations'>
+          <div className='my-[16px] flex justify-center'>
+            <OtherCards
+              img={otherData[0].img}
+              title={otherData[0].title}
+              key={otherData[0].id}
+            />
+          </div>
+        </Link>
         <div className='my-[16px] flex justify-center'>
           <OtherCards
             img={otherData[1].img}

@@ -103,7 +103,7 @@ export const socialMedia = [
   {
     logo: (
       <svg
-        className='hover: transition ease-in-out delay-100'
+        className='hover: transition delay-100 ease-in-out'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
         width='24'
@@ -121,7 +121,7 @@ export const socialMedia = [
   {
     logo: (
       <svg
-        className='hover:-translate-y-1 transition ease-in-out delay-100'
+        className='transition delay-100 ease-in-out hover:-translate-y-1'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
         width='24'
@@ -139,7 +139,7 @@ export const socialMedia = [
   {
     logo: (
       <svg
-        className='hover:-translate-y-1 transition ease-in-out delay-100'
+        className='transition delay-100 ease-in-out hover:-translate-y-1'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
         width='24'
@@ -157,7 +157,7 @@ export const socialMedia = [
   {
     logo: (
       <svg
-        className='hover:-translate-y-1 transition ease-in-out delay-100'
+        className='transition delay-100 ease-in-out hover:-translate-y-1'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
         width='24'
@@ -171,5 +171,32 @@ export const socialMedia = [
       </svg>
     ),
     link: 'https://www.linkedin.com/in/sreemikil-t-manoharan-4a050a188/',
+  },
+];
+
+export const illustrations = [
+  {
+    image:
+      ' https://images.unsplash.com/photo-1575995872537-3793d29d972c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1581039876822-f6405325bcc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1521911528923-9c3838123490?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1583934754518-17915fd797f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1576497587501-f71f94bef499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=635&q=80',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1580715911453-d6d9cffd5771?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=807&q=80',
   },
 ];
