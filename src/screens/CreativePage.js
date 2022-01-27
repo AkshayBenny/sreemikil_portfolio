@@ -47,7 +47,7 @@ function CreativePage() {
           </div>
         </StickyBox>
 
-        <div className='flex-1 md:pl-[143px]'>
+        <div className='flex-1 pl-[0] lg:pl-[143px]'>
           <div>
             <h1 className='text-[18px]	font-medium text-[#453091] lg:text-[24px]'>
               PROJECT
