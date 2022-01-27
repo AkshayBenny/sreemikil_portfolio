@@ -30,13 +30,14 @@ function App() {
             </Route>
           </Switch>
 
-          <div className='bottom-0'>
+          <div className=''>
             <BackToTop
               style={{
                 bottom: '20px',
                 right: '30px',
                 backgroundColor: '#fff',
                 color: '#613EE2',
+                filter: 'drop-shadow(0 1px 1px rgb(0 0 0 / 0.05))',
               }}
             />
           </div>
