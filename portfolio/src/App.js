@@ -6,6 +6,9 @@ import CreativePage from './screens/CreativePage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+
+import BackToTop from 'react-custom-back-to-top-button';
+
 function App() {
   return (
     <div>
@@ -20,6 +23,11 @@ function App() {
             <CreativePage />
           </Route>
         </Switch>
+      
+        <div className='bottom-0'>
+          <BackToTop style={{ bottom: '20px', right: '30px' }} />
+        </div>
+
         <Footer />
       </BrowserRouter>
     </div>
