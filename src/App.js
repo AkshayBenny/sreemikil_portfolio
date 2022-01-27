@@ -5,7 +5,7 @@ import HomePage from './screens/HomePage';
 import CreativePage from './screens/CreativePage';
 import Header from './components/Header';
 import Footer from './components/Footer';
-
+import ScrollToTop from './components/ScrollToTop';
 
 import BackToTop from 'react-custom-back-to-top-button';
 
@@ -13,22 +13,24 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Header />
-        <Switch>
-          <Route exact path='/' component={HomePage}>
-            <HomePage />
-          </Route>
+        <ScrollToTop>
+          <Header />
+          <Switch>
+            <Route exact path='/' component={HomePage}>
+              <HomePage />
+            </Route>
 
-          <Route exact path='/creative/:id' component={CreativePage}>
-            <CreativePage />
-          </Route>
-        </Switch>
-      
-        <div className='bottom-0'>
-          <BackToTop style={{ bottom: '20px', right: '30px' }} />
-        </div>
+            <Route exact path='/creative/:id' component={CreativePage}>
+              <CreativePage />
+            </Route>
+          </Switch>
 
-        <Footer />
+          <div className='bottom-0'>
+            <BackToTop style={{ bottom: '20px', right: '30px' }} />
+          </div>
+
+          <Footer />
+        </ScrollToTop>
       </BrowserRouter>
     </div>
   );

@@ -7,7 +7,7 @@ import StickyBox from 'react-sticky-box';
 function CreativePage() {
   const { id } = useParams();
   const project = creativeProjectData.find((project) => project.id === id);
-  console.log(project);
+  // console.log(project);
   return (
     <div className='mt-[36px] px-[24px] md:px-[64px]'>
       <div className='items-center justify-center gap-[48px] lg:flex'>

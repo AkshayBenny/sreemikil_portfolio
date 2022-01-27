@@ -17,23 +17,23 @@ export default function Example() {
 
   // console.log(isActive);
 
-  const componentDidMount = () => {
-    document.body.style.overflow = 'hidden';
-  };
+  // const componentDidMount = () => {
+  //   document.body.style.overflow = 'hidden';
+  // };
 
-  const componentWillUnmount = () => {
-    document.body.style.overflow = 'visible';
-  };
+  // const componentWillUnmount = () => {
+  //   document.body.style.overflow = 'visible';
+  // };
 
-  const scrollAlower = () => {
-    if (isOpen === true) {
-      componentDidMount();
-    } else if (isOpen === false) {
-      componentWillUnmount();
-    }
-  };
+  // const scrollAlower = () => {
+  //   if (isOpen === true) {
+  //     componentDidMount();
+  //   } else if (isOpen === false) {
+  //     componentWillUnmount();
+  //   }
+  // };
 
-  scrollAlower();
+  // scrollAlower();
   // setIsActive(false);
 
   return (
