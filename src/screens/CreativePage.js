@@ -205,7 +205,7 @@ function CreativePage() {
         <h1 className='pt-[72px] pb-[16px] text-center	text-[24px] font-semibold text-[#120055] lg:text-[40px]'>
           Other Works
         </h1>
-        <div className='mt-[48px] flex-row items-center  px-[24px] lg:mt-[72px] lg:flex lg:justify-center lg:gap-[48px] lg:px-[64px]'>
+        <div className='mt-[48px] flex-row items-center  lg:mt-[72px] lg:flex lg:justify-center lg:gap-[48px] lg:px-[64px]'>
           <div className='mb-[36px] flex justify-center lg:mb-[0px]'>
             <Link to={`${creativeData[0].id}`}>
               <CreativeCard
