@@ -12,7 +12,7 @@ import BackToTop from 'react-custom-back-to-top-button';
 
 function App() {
   return (
-    <div>
+    <div className='select-none'>
       <BrowserRouter>
         <ScrollToTop>
           <Header />
