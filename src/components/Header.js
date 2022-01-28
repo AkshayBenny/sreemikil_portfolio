@@ -14,6 +14,7 @@ function classNames(...classes) {
 export default function Example() {
   // const [isActive, setIsActive] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  console.log(navigation);
 
   // console.log(isActive);
 
@@ -38,18 +39,18 @@ export default function Example() {
 
   return (
     <>
-      <div className='min-h-full  sticky top-0 z-50'>
+      <div className='sticky  top-0 z-50 min-h-full'>
         <Disclosure
           as='nav'
-          className='bg-white backdrop-filter backdrop-blur bg-opacity-30 firefox:bg-opacity-90'
+          className='firefox:bg-opacity-90 bg-white bg-opacity-30 backdrop-blur backdrop-filter'
         >
           {({ open }) => (
             <>
               <div className='mx-auto px-[24px] sm:px-[64px]'>
-                <div className='flex items-center justify-between h-16'>
+                <div className='flex h-16 items-center justify-between'>
                   <Link to='/'>
                     <div className='flex-shrink-0'>
-                      <p className='text-[#1d0575] text-[16px]  font-semibold	'>
+                      <p className='text-[16px] font-semibold  text-[#1d0575]	'>
                         SreemikiLt
                       </p>
                     </div>
@@ -61,7 +62,7 @@ export default function Example() {
                           <a
                             key={item.name}
                             href={item.href}
-                            className='font-semibold text-[#12005580] text-[16px] hover:text-[#120055] transition ease-in-out delay-100 active:text-[#120055]'
+                            className='text-[16px] font-semibold text-[#12005580] transition delay-100 ease-in-out hover:text-[#120055] active:text-[#120055]'
                             aria-current={item.current ? 'page' : undefined}
                           >
                             {item.name}
@@ -96,7 +97,7 @@ export default function Example() {
                       onClick={() => {
                         setIsOpen(!isOpen);
                       }}
-                      className=' inline-flex items-center justify-center p-2 rounded-md text-[#120055] '
+                      className=' inline-flex items-center justify-center rounded-md p-2 text-[#120055] '
                     >
                       <span className='sr-only'>Open main menu</span>
                       {open ? (
@@ -113,7 +114,7 @@ export default function Example() {
               </div>
 
               <Disclosure.Panel className='md:hidden'>
-                <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
+                <div className='space-y-1 px-2 pt-2 pb-3 sm:px-3'>
                   {navigation.map((item) => (
                     <Disclosure.Button
                       key={item.name}
@@ -122,8 +123,8 @@ export default function Example() {
                       className={classNames(
                         item.current
                           ? 'bg-gray-900 text-white'
-                          : 'font-semibold text-[#120055] text-[16px] ',
-                        'block px-3 py-2 rounded-md text-base font-medium'
+                          : 'text-[16px] font-semibold text-[#120055] ',
+                        'block rounded-md px-3 py-2 text-base font-medium'
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >
