@@ -93,10 +93,10 @@ export const creativeProjectData = [
 ];
 
 export const navigation = [
-  { id: '1', name: 'Home', href: '#' },
-  { id: '2', name: 'Portfolio', href: '#' },
-  { id: '3', name: 'About', href: '#' },
-  { id: '4', name: 'Contact', href: '#' },
+  { id: '1', name: 'Home', href: '#', to:"hero" },
+  { id: '2', name: 'Portfolio', href: '#', to:"portfolio" },
+  { id: '3', name: 'About', href: '#', to:"about" },
+  { id: '4', name: 'Contact', href: '#', to:"contact" },
 ];
 
 export const socialMedia = [

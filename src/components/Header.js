@@ -14,7 +14,6 @@ function classNames(...classes) {
 export default function Example() {
   // const [isActive, setIsActive] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  console.log(navigation);
 
   // console.log(isActive);
 
@@ -36,7 +35,7 @@ export default function Example() {
 
   // scrollAlower();
   // setIsActive(false);
-
+  
   return (
     <>
       <div className='sticky  top-0 z-50 min-h-full'>
@@ -55,6 +54,7 @@ export default function Example() {
                       </p>
                     </div>
                   </Link>
+                  <div>Go to about section</div>
                   <div className='hidden md:block'>
                     <div className='ml-10 flex items-baseline space-x-4'>
                       {navigation.map((item) => (
